@@ -1,0 +1,294 @@
+:root{
+	--color-purple: #1b1464;
+	--color-purple-darker: #17143B;
+	--color-dark-grey: #726766;
+	--font-primary: 'Merriweather', serif;
+	--font-main: 'Open Sans', sans-serif;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+body{
+	font-family:var(--font-main);
+	font-size:1.7vw;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+
+	font-family: var(--font-primary);
+}
+
+h1{
+	font-size:1.5rem;
+}
+
+h2, .h2{
+	font-size:1.7rem;
+}
+
+a, p {
+	font-size:.9rem;
+
+}
+
+.purple_background {
+	background-color:var(--color-purple);
+	color:#ffffff;
+}
+
+.light_grey_background {
+	background-color:#cdcccc;
+}
+
+.text-primary{
+	color:#113951 !important;
+}
+
+.text-secondary{
+	color:#28536C !important;
+}
+
+
+.container-fluid {
+	min-width:320px;
+	max-width:1400px;
+}
+
+.navbar {
+	padding-left:0 !important;
+}
+
+.navbar-collapse {
+	z-index:5;
+	border-radius:2px;
+}
+
+/* hanburder icon */
+.navbar-toggler {
+	border:none;
+}
+
+/* hambuger icon bars */
+.fas, .fa-bars{
+	color:var(--color-purple-darker);
+}
+
+/* make hamburder icon bars are white against dark bgs */
+.fas.dark-bg, .fa-bars.dark-bg{
+	color:white;
+}
+
+.nav-link {
+	font-size:.8rem;
+	margin-right:20px;
+	text-transform:uppercase;
+}
+
+.search_button {
+	color: var(--color-purple-darker)
+}    
+
+
+.header{
+	background-color:rgba(255,255,255,0.7);
+	position:absolute;
+	top:50%;
+	padding:2%;
+}
+
+
+.header a {
+	color:white;
+	font-size:.5rem;
+	background-color:var(--color-dark-grey);
+	padding:2%;
+	text-transform:uppercase;
+	border-radius:2px;
+	box-shadow:1px 2px 4px grey;
+}
+
+.header a:hover {
+	background-color:var(--color-purple-darker);
+	text-decoration:none;
+}
+
+.phone_logo {
+	padding-top:8px;
+	width:60px;
+}
+
+.desktop_logo{
+	position:absolute;
+	border:none;
+}
+
+.front_picture{
+	background-image:url("../images/front_display.jpg");
+	height:250px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	position:relative;
+}
+
+/* gradient overlay on header picture */
+.header-overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+	height:100%;
+	width:100%;
+	background-color:transparent;
+	background-image: linear-gradient(transparent 0%, transparent 75%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.home_picture{
+	background-image:url("../images/front_display.jpg");
+}
+
+.news_picture{
+	background-image:url("../images/news_display.jpg");
+}
+
+.housing_picture{
+	background-image:url("../images/housing_display.jpg");
+}
+
+.degree_picture{
+	background-image:url("../images/degreePrograms_display.jpg");
+}
+
+main{
+
+	height:600px;
+}
+
+.footer_logo{
+	width:80px;
+	height:80px;
+}
+
+footer p{
+	font-size:.7rem;
+	margin:0;
+}
+
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+	
+	.front_picture, .housing_picture, .degree_picture, .news_picture{
+		height:400px;
+		width:100%;
+	}
+
+	.desktop_logo{
+		width:100px;
+		height:100px;
+		top:-15%;
+		margin-left:4%;
+	}
+
+	.header{
+		top:60%;
+	}
+
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+	h1{
+		font-size:2rem;
+	}
+
+	h2, .h2{
+		font-size:1.8rem;
+	}
+		
+	a, p, li{
+		font-size:1rem;
+	}
+
+	.header{
+		top:50%;
+	}
+
+	.header a {
+		font-size:.7rem;
+		padding:2%;
+	}
+
+	.front-picture{
+		height:600px;
+		width:100%;
+	}
+
+
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+	h1{
+		font-size:2.5rem;
+	}
+
+	h2, .h2{
+		font-size:2rem;
+	}
+	
+	a, p, li{
+		font-size:1.1rem;
+	}
+	
+	.desktop_logo{
+		width:115px;
+		height:115px;
+		margin-left:6%;
+		position:absolute;
+		top:-10%;
+	}
+
+	.front_picture{
+		height:600px;
+	}
+
+	.footer_logo{
+		width:110px;
+		height:110px;
+	}
+	
+	.address p{
+		font-size:12px;
+	}
+
+	.header{
+		top:60%;
+	}
+	
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+	h1{
+		font-size:3rem;
+	}
+
+	h2, .h2{
+		font-size:2.2rem;
+	}
+
+	.desktop_logo{
+		width:120px;
+		height:120px;
+		margin-left:6%;
+		position:absolute;
+		top:-10%;
+	}
+
+}
