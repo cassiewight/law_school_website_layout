@@ -5,5 +5,5 @@ Project demonstrates:
 - SVG logo design
 - Responsive header and footer layout design with bootstrap
 - Photo optimization
-- Meta information optomized for SEO
+- Meta data optomized for SEO
 - Animations, overlays and layered elements
